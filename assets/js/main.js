@@ -26,7 +26,7 @@ window.addEventListener('scroll', scrollUp);
 
 function scrollUp() {
   const scrollUp = document.getElementById('scrollup');
-  if (this.scrollY >= 100) {
+  if (this.scrollY >= 200) {
     scrollUp.classList.add('show-scrollup');
   } else {
     scrollUp.classList.remove('show-scrollup');
