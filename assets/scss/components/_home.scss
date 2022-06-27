@@ -1,0 +1,88 @@
+.home {
+  background: linear-gradient(170deg, hsl(0, 0%, 20%) 0%, hsl(0, 0%, 5%) 30%);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9rem;
+
+  position: relative;
+}
+
+.home__data {
+  color: var(--text-color-light);
+  display: grid;
+  row-gap: 2rem;
+}
+
+.home__title {
+  color: var(--white-color);
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.home__form {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--white-color);
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home__form i {
+  color: var(--first-color);
+  font-size: 1.3rem;
+}
+
+.home__input {
+  width: 100%;
+}
+
+.home__input::placeholder {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+}
+
+.home__infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__info-number {
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home__info-number span {
+  color: var(--second-color);
+}
+
+.home__info-description {
+  font-size: var(--small-font-size);
+  display: flex;
+}
+
+.home__img {
+  border-radius: 16rem 16rem 1rem 1rem;
+  background-color: hsla(0, 0%, 30%, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  overflow: hidden;
+
+  position: absolute;
+  bottom: -8rem;
+  right: 0;
+
+  width: 470px;
+}
+
+.home__img img {
+  border-radius: 16rem 16rem 0.5rem 0.5rem;
+}

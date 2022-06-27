@@ -1,0 +1,23 @@
+.logos.section {
+  padding-top: 10rem;
+}
+
+.logos__container {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+}
+
+.logos__img {
+  height: 85px;
+}
+
+.logos__img img {
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.logos__img:hover img {
+  opacity: 1;
+}

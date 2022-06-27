@@ -1,0 +1,69 @@
+.popular .swiper-wrapper {
+  margin-bottom: 5rem;
+  margin-top: 0.5rem;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  border: 1px solid var(--text-color-light);
+  border-radius: 0.5rem;
+  color: var(--first-color);
+  width: 35px;
+  height: 35px;
+}
+
+.swiper-button-next {
+  right: calc(50% - 2.8rem);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 2.8rem);
+}
+
+.popular .section-title {
+  margin-bottom: 2rem;
+}
+
+.popular__card {
+  box-shadow: 0 0 10px hsla(228, 66%, 50%, 0.1);
+  overflow: hidden;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.popular__card:hover {
+  box-shadow: 0 10px 10px hsla(228, 66%, 50%, 0.2);
+}
+
+.popular__img {
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.popular__price {
+  color: var(--text-color);
+}
+
+.popular__price span {
+  color: var(--second-color);
+}
+
+.popular__title {
+  margin-bottom: 1rem;
+}
+
+.popular__address {
+  font-size: var(--small-font-size);
+}

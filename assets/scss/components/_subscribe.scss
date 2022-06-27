@@ -1,0 +1,29 @@
+.subscribe__container {
+  background-color: var(--first-color);
+  text-align: center;
+  padding: 4rem 0;
+  border-radius: 1.5rem;
+  border: solid 10px hsl(228, 66%, 60%);
+}
+
+.subscribe__title {
+  font-size: var(--h1-font-size);
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.subscribe__description {
+  color: hsl(228, 100%, 90%);
+  width: calc(50% - 4rem);
+  margin: 0 auto 2rem;
+}
+
+.subscribe__btn {
+  background: hsl(228, 66%, 60%);
+  border: solid 2px var(--white-color);
+  padding: 0.7rem 1.5rem;
+}
+
+.subscribe__btn:hover {
+  background: var(--first-color);
+}

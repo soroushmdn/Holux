@@ -1,0 +1,23 @@
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  z-index: 99;
+
+  box-shadow: 0 0 5px hsla(228, 15%, 50%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border-radius: 0.3rem;
+  display: inline-flex;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  color: var(--first-color);
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.show-scrollup {
+  bottom: 7rem;
+}

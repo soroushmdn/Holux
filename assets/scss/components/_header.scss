@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--white-color);
+  font-weight: var(--font-semi);
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__list {
+  display: flex;
+  margin-left: auto;
+  margin-right: 3rem;
+  gap: 3rem;
+}
+
+.nav__link i {
+  display: none;
+}
+
+.nav__link span {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+// change header background when window is scrolling
+.scroll-header {
+  background-color: var(--white-color);
+  box-shadow: 0 0 5px hsla(228, 66%, 30%, 0.3);
+}
+
+.scroll-header .nav__logo {
+  color: var(--first-color);
+}
+
+.scroll-header .nav__link span {
+  color: var(--text-color);
+}
+
+// because of css order
+.nav__link:hover span {
+  color: var(--first-color);
+}

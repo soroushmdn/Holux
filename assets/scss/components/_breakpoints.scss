@@ -1,0 +1,440 @@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 992PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 992px) {
+  // @@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@
+  .nav__link span {
+    display: none;
+  }
+
+  .nav__btn {
+    font-size: var(--small-font-size);
+    padding: 0.5rem 0.7rem;
+  }
+
+  .nav__list {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 5px hsla(228, 66%, 50%, 0.2);
+
+    overflow: hidden;
+  }
+
+  .nav__link {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__link-hovertop,
+  .nav__link-hoverbottom {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .nav__link-hovertop {
+    background-color: var(--first-color);
+    box-shadow: 0 3px 7px hsl(228, 66%, 40%);
+    top: 0;
+  }
+
+  .nav__link-hoverbottom {
+    background-color: var(--second-color);
+    box-shadow: 0 3px 7px hsl(25, 83%, 40%);
+    bottom: -5rem;
+  }
+
+  .nav__link:hover .nav__link-hovertop {
+    top: -5rem;
+  }
+  .nav__link:hover .nav__link-hoverbottom {
+    bottom: 0;
+  }
+
+  .nav__link i {
+    display: initial;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    z-index: 10;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@
+  .home {
+    padding-top: 7rem;
+  }
+
+  .home__container {
+    gap: 5rem;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+  }
+
+  .home__img {
+    bottom: -7rem;
+    width: 350px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ LOGOS @@@@@@@@@@@@@@@@@@@@
+  .logos.section {
+    padding-top: 8rem;
+  }
+
+  .logos__img {
+    height: 70px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ POPULAR @@@@@@@@@@@@@@@@@@@@
+  .popular__card {
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  }
+
+  .popular__title {
+    font-size: var(--normal-font-size);
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ VALUE @@@@@@@@@@@@@@@@@@@@
+  .value__container {
+    gap: 2.5rem;
+  }
+
+  .value__img {
+    height: 500px;
+  }
+
+  .value__accordion-description {
+    margin-right: 2rem;
+  }
+
+  .value__accordion:hover {
+    height: 150px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@
+  .contact__container {
+    gap: 2.5rem;
+  }
+
+  .contact__boxes {
+    gap: 1rem;
+  }
+
+  .contact__box {
+    padding: 1.2rem;
+  }
+
+  .contact__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .contact__img {
+    height: 500px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@
+  .footer__copy {
+    margin-bottom: 6rem;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 765PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 767px) {
+  // @@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@
+  .nav__list {
+    width: 65%;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@
+  .home__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .home__form {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .home__infos {
+    width: 55%;
+  }
+
+  .home__img {
+    bottom: -6rem;
+    width: 330px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ LOGOS @@@@@@@@@@@@@@@@@@@@
+  .logos.section {
+    padding-top: 7rem;
+  }
+
+  .logos__img {
+    height: 55px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ POPULAR @@@@@@@@@@@@@@@@@@@@
+  .popular__card {
+    padding: 1rem 1rem 1.5rem 1rem;
+    width: 250px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ VALUE @@@@@@@@@@@@@@@@@@@@
+
+  .value__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .value__img {
+    width: 330px;
+    height: initial;
+    justify-self: center;
+  }
+
+  .value__accordions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .value__accordion {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+    height: 55px;
+  }
+
+  .value__accordion-icon,
+  .value__accordion-button {
+    font-size: 0.9rem;
+  }
+
+  .value__accordion-title {
+    font-size: var(--small-font-size);
+  }
+
+  .value__accordion-description {
+    margin-right: 1rem;
+  }
+
+  .value__accordion:hover {
+    height: 175px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact__boxes {
+    gap: 1.5rem 1.2rem;
+  }
+
+  .contact__img {
+    width: 330px;
+    height: initial;
+    justify-self: center;
+    order: -1;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ SUBSCRIBE @@@@@@@@@@@@@@@@@@@@
+  .subscribe__description {
+    width: 55%;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@
+  .footer__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 576PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 576px) {
+  // @@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@
+  .nav__btn {
+    font-size: var(--tiny-font-size);
+  }
+
+  .nav__list {
+    width: 90%;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@
+  .home__data {
+    row-gap: 1.3rem;
+  }
+
+  .home__form {
+    width: 100%;
+  }
+
+  .home__infos {
+    width: 85%;
+  }
+
+  .home__img {
+    width: 320px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ LOGOS @@@@@@@@@@@@@@@@@@@@
+  .logos__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 3rem;
+  }
+
+  .logos__img {
+    height: 60px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ VALUE @@@@@@@@@@@@@@@@@@@@
+
+  .value__img {
+    width: 320px;
+  }
+
+  .value__accordions {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .value__accordion {
+    height: 50px;
+  }
+
+  .value__accordion-description {
+    margin-right: 1.5rem;
+  }
+
+  .value__accordion:hover {
+    height: 150px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@
+  .contact__box {
+    padding: 1rem;
+  }
+
+  .contact__img {
+    width: 320px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ SUBSCRIBE @@@@@@@@@@@@@@@@@@@@
+  .subscribe__container {
+    padding: 3rem 1.5rem;
+  }
+
+  .subscribe__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .subscribe__description {
+    width: 100%;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@
+  .footer__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .footer__group {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 370PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (max-width: 370px) {
+  // @@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@
+  .home {
+    padding-bottom: 0;
+  }
+
+  .home__infos {
+    width: 100%;
+  }
+
+  .home__img {
+    width: 250px;
+    bottom: -1.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ VALUE @@@@@@@@@@@@@@@@@@@@
+  .value__img {
+    width: 250px;
+  }
+
+  .value__accordion {
+    height: 55px;
+  }
+
+  .value__accordion-description {
+    margin-right: 1.5rem;
+  }
+
+  .value__accordion:hover {
+    height: 180px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@
+  .contact__boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__img {
+    width: 250px;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --header-height: 4rem;
+
+  --first-color: hsl(228, 66%, 50%);
+  --first-color-dark: hsl(228, 66%, 40%);
+  --first-color-light: hsl(228, 66%, 93%);
+  --second-color: hsl(25, 83%, 55%);
+  --title-color: hsl(228, 55%, 25%);
+  --text-color: hsl(228, 15%, 50%);
+  --text-color-light: hsl(228, 5%, 70%);
+  --white-color: #fff;
+
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.2rem;
+  --h3-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.9rem;
+  --tiny-font-size: 0.7rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi: 600;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --h1-font-size: 2.2rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.1rem;
+    --normal-font-size: 0.9rem;
+    --small-font-size: 0.8rem;
+    --tiny-font-size: 0.6rem;
+  }
+}
+
+// @@@@@@@@@@@@@@@ BASE @@@@@@@@@@@@@@@
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-semi);
+  color: var(--title-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+button {
+  cursor: pointer;
+}
+
+// @@@@@@@@@@@@@@@ CSS reusable classes @@@@@@@@@@@@@@@
+
+.container {
+  max-width: 1140px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5rem 0 2rem;
+}
+
+.section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.section-title span {
+  color: var(--second-color);
+}
+
+.section-subtitle {
+  display: block;
+  color: var(--second-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.btn {
+  background: linear-gradient(100deg, hsl(228, 66%, 55%), hsl(228, 66%, 40%));
+  display: inline-block;
+  color: var(--white-color);
+  padding: 0.6rem 1.3rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 7px hsl(228, 66%, 50%);
+}
+
+// @@@@@@@@@@@@@@@ scroll bar @@@@@@@@@@@@@@@
+
+::-webkit-scrollbar {
+  background-color: hsl(228, 10%, 70%);
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 5%, 50%);
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(228, 5%, 40%);
+}
+
+// @@@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsla(228, 100%, 15%, 0.1);
+  backdrop-filter: blur(30px);
+}
+
+.preloader i {
+  font-size: 7rem;
+  color: hsl(228, 80%, 50%);
+}
