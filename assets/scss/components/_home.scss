@@ -1,5 +1,6 @@
 .home {
-  background: linear-gradient(170deg, hsl(0, 0%, 20%) 0%, hsl(0, 0%, 5%) 30%);
+  // background: linear-gradient(170deg, hsl(0, 0%, 20%) 0%, hsl(0, 0%, 5%) 30%);
+  background: hsl(0, 0%, 10%);
   padding-top: 10rem;
   padding-bottom: 3rem;
 }
@@ -39,7 +40,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: hsl(0, 0%, 5%);
+  background: hsl(0, 0%, 10%);
 
   animation: textload 4s infinite steps(30);
 }
@@ -52,7 +53,7 @@
   50% {
     left: 110%;
   }
-  
+
   100% {
     left: 0;
   }
