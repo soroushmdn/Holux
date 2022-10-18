@@ -20,6 +20,29 @@ function scrollHeader() {
   }
 }
 
+// @@@@@@@@@@@@@@@@@@ TEXT LOAD ANIMATION @@@@@@@@@@@@@@@@@@
+const text = document.querySelector('.text-load');
+
+function textLoad() {
+  setTimeout(() => {
+    text.textContent = 'Property.';
+  }, 0);
+
+  setTimeout(() => {
+    text.textContent = 'Estate.';
+  }, 4000);
+
+  setTimeout(() => {
+    text.textContent = 'Territory.';
+  }, 8000);
+}
+
+textLoad();
+setInterval(textLoad, 12000);
+// setInterval(() => {
+//   textLoad();
+// }, 12000);
+
 // @@@@@@@@@@@@@@ show scrollup @@@@@@@@@@@@@@
 
 window.addEventListener('scroll', scrollUp);
